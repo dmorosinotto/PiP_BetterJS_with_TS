@@ -18,3 +18,5 @@ var people: Array<Person> = [
 // UNION TYPES
 var opt: number | string | string[];
 opt = 123; opt = "456"; opt = ["8","9"];
+// FUNCTIONS
+declare function output(...args: any[]):void;

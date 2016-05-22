@@ -1,9 +1,23 @@
 <html>
 <head>
     <title>Basics Sample</title>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 <body>
-    Ciao
+    <h1>TypeScript helps find / prevent bugs</h1>
+
+    <div id="content"></div>
+    <pre id="output"></pre>
+    <script>
+        function output() {
+            var args = Array.prototype.slice.call(arguments, 0);
+            args.map(function (arg) {
+                document.getElementById("output").innerText += JSON.stringify(arg) + "\n";
+            });
+        }
+    </script>
+    <button onclick="ask('come stai?')">Domanda</button>
+    <span id="answer"></span>
     <!-- <script src="bug.js"></script> -->
     <script src="dist/correct.js"></script>
 </body>
