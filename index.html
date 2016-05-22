@@ -41,7 +41,7 @@
 		<section data-state="intro">
 			<br/>
 			<h2>Better JS with TS</h2>
-			<p>by Daniele Morosinotto</p>
+			<p>by Daniele Morosinotto <a href="https://twitter.com/dmorosinotto">@dmorosinotto</a></p>
 			
 			<small>Slide & Code: <a href="https://github.com/dmorosinotto/PiP_BetterJS_with_TS">https://github.com/dmorosinotto/PiP_BetterJS_with_TS</a></small>
 		</section>
@@ -57,54 +57,77 @@
 	
 <section data-markdown data-separator="^\n===\n$" data-vertical="^\n---\n">
 <script type="text/template">
-#Agenda
 
-Write something...
+### A statically typed SUPERSET of JS that compiles to plain JavaScript. 
+### Run on: Any browser. Any host. Any OS.<!-- .element: class="fragment current-visible" -->
+### Built by Microsoft but it's Open Source!<!-- .element: class="fragment current-visible" -->
+# JAVASCRIPT IS TYPESCRIPT! <!-- .element: class="fragment current-visible" -->
 
 ---
 
-## Slide Title 
-- List items
-- Text [Link](http://www.google.it)
-	- normal
-	- **bold**
-	- *italic*
-![Image alt](images/Who.gif)
+![Typescript](images/TS_ES6_JS.png)
 
-===
+---
 
-# Simple Snippet
+#Annotations
 
 ```javascript
-var a=1, b=2;
-console.log( a+b === 0.3 ); //FALSE
+var idx: number;
+var str: string;
+var flag: boolean;
+var obj: any;
+// ARRAY
+var arr: string[];
+// INTERFACES
+interface Person {
+	name: string;
+	age?: number;
+}
+// GENERICS
+var people: Array<Person>
+// UNION TYPES
+var opt: number | string | string[];
 ```
+
+DEMO: **Type-Check** based on [annotations](samples/basics/annotations.ts) in Sublime
+
+---
+### DEMO: Typescript prevent/help find [bugs](samples/basics/bug.ts) in code!
+
+![DEMO](images/DEMO.png)
 
 ===
 
-## Reference
-- [link](http://site.url) description
+### TypeScript: JavaScript that scales for LARGE App.
+![TS_js_that_scale](images/TS_js_that_scale.png)
 
-</script>
-</section>
-<section>	
-	<section data-state="demo">
-	</section>
-</section>	
-<section>	
-	<section data-state="feedback">
-	  <h1>THE END</h1>
-	  <h3>by Daniele Morosinotto</h3>
-	  <br/>
-	  <h5>Contact</h5>
-	  <ul>
-		<li><a href="mailto:dmorosinotto@icloud.com">dmorosinotto@icloud.com</a></li>
-		<li>twiter <a href="https://twitter.com/dmorosinotto">@dmorosinotto</a></li>
-		<li>download <a href="http://link/to/onedrive">http://1drv.ms/short.link</a></li>
-	  <ul>	
-	  <br/>
-	  <small>Realizzato con <a href="http://lab.hakim.se/reveal-js">reveal.js</a> + <a href="http://ace.c9.io/">ace code editor</a>.</small>	  
-	</section>		  
+---
+
+### TypeScript: Allows to use feature for the future today!
+ 
+![TS_fill_feature_gap](images/TS_fill_feature_gap.png)
+
+---
+### DEMO: Typescript [module](samples/modules) architecture
+
+![DEMO](images/DEMO.png)
+
+===
+
+![TS_meme](images/TS_meme.png)
+
+---
+
+### Reference
+
+- TypeScript Official site with: [Tutorials](http://www.typescriptlang.org/docs/tutorial.html), [Handbook](http://www.typescriptlang.org/docs/handbook/basic-types.html), [Playground](http://www.typescriptlang.org/play/index.html)
+- TypeScript is Open Source: [Github Repository](https://github.com/Microsoft/TypeScript) + [Feature/Release notes](http://www.typescriptlang.org/docs/release-notes/typescript-1.8.html)
+- TS Definitions files .d.ts for 2K lib: [Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped) [TSD](http://definitelytyped.org/tsd/) [typings](https://www.npmjs.com/package/typings)
+- All JS libraries should be authored in TypesSript by [André Staltz](http://staltz.com/all-js-libraries-should-be-authored-in-typescript.html)
+- Talk Anders Hejlsberg explain modern [Compiler](https://channel9.msdn.com/Blogs/Seth-Juarez/Anders-Hejlsberg-on-Modern-Compiler-Construction) and future [TypeScript 2.0](https://channel9.msdn.com/Blogs/Seth-Juarez/Anders-Hejlsberg-on-TypeScript-2)
+
+![Contacts](images/Contact.jpg)<!-- .element: class="noborder" -->
+	</script>	  
 </section>
 
 	</div><!-- end slides -->

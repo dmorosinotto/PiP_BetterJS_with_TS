@@ -11,12 +11,13 @@ different way to compile and bundle the same app modules written in TS using: [n
 ---
 
 ### Pre-requisite:
-Install **Typescript** `npm i -g typescript` + plugin for your favorite editor ([see official page](http://www.typescriptlang.org/index.html#download-links)).
+Install [Node.js](https://nodejs.org) and **Typescript** `npm i -g typescript` + plugin for your favorite editor ([see official page](http://www.typescriptlang.org/index.html#download-links)).
 
 ### To try samples:
 ```
 npm install
-cd samples\proj_dir
+
 npm run tsc -- samples\proj_dir
 npm run serve -- samples\proj_dir
 ```
+open your favorite browser [http://localhost:8080](http://localhost:8080)

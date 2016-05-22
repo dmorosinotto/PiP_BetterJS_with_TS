@@ -1,20 +1,20 @@
 // BASIC TYPES
-var n: number = 123;
-var s: string = "Hello World";
-var b: boolean = true;
-var x: any = {y: null, z: 123};
-x.y = 456; x = undefined; x = ""; // ALL VALID
+var idx: number = 123;
+var str: string = "Hello World";
+var flag: boolean = true;
+var obj: any = {y: null, z: 123};
+obj.y = 456; obj = undefined; obj = "";
 // ARRAY
-var a: string[] = ['a', 'b', 'c'];
+var arr: string[] = ['a', 'b', 'c'];
 // INTERFACES
 interface Person {
 	name: string;
-	age: number;
+	age?: number;
 }
 // GENERICS
 var people: Array<Person> = [
 	{name: "Pippo", age:78},
 ]
 // UNION TYPES
-var u: number | string | string[];
-u = 123; u = "456"; u = ["789"]; // ALL VALID
+var opt: number | string | string[];
+opt = 123; opt = "456"; opt = ["8","9"];

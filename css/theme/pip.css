@@ -163,3 +163,8 @@ html body {
 
 .reveal blockquote:after {
   content: ''; }
+
+.reveal .noborder {
+  box-shadow: 0 0 0px !important;
+  border: 0 !important;
+}
