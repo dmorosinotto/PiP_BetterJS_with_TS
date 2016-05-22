@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "outFile": "dist/bundle.js",
+        "sourceMap": true
+    },
+    "exclude": [
+        "dist",
+        "node_modules",
+        "typings/main",
+        "typings/main.d.ts"
+    ]
+}

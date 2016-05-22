@@ -1,0 +1,25 @@
+{
+  "name": "ts-amd",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "postinstall": "typings install",
+    "start": "npm run build  &&  npm run serve",
+    "build": "tsc -pretty -p .",
+    "serve": "http-server -p 8080 -c-1 --cors"
+  },
+  "keywords": [
+    "Typescript",
+    "AMD",
+    "requirejs"
+  ],
+  "author": "Daniele Morosinotto",
+  "license": "MIT",
+  "peerDependencies": {
+    "http-server": "^0.9.0",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1"
+  }
+}

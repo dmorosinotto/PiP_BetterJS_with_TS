@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "outDir": "dist"
+    },
+    "files": [
+        "src/index.ts",
+        "typings/browser.d.ts"
+    ]
+}

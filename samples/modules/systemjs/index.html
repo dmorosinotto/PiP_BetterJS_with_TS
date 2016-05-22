@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Typescript + Systemjs</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script> 
+    <!-- Load systemjs and configure it to run entrypoint src/index.js from bundle -->
+    <script src="https://npmcdn.com/systemjs@0.19.6/dist/system.src.js"></script>
+    <script src="dist/bundle.js"></script>
+    <script src="systemjs.conf.js"></script>
+</head>
+<body>
+    <h1>Typescript project build with Systemjs</h1>
+    <p id="output">Loading ... module=system --> bundle + systemjs entrypoint</p>
+    <hr><a href="https://github.com/systemjs/systemjs/blob/master/docs/config-api.md">MORE INFO ABOUT THIS CONFIG</a>
+</body>
+</html>

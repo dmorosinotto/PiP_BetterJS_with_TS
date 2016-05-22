@@ -1,0 +1,25 @@
+{
+  "name": "ts-browserify",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "dist/bundle.js",
+  "scripts": {
+    "postinstall": "typings install  &&  mkdir dist",
+    "start": "npm run build  &&  npm run serve",
+    "build": "browserify src/index.ts --debug --plugin=tsify --outfile dist/bundle.js",
+    "serve": "http-server -p 8080 -c-1 --cors"
+  },
+  "keywords": [
+    "Typescript",
+    "Commonjs",
+    "Browserify"
+  ],
+  "author": "Daniele Morosinotto",
+  "license": "MIT",
+  "peerDependencies": {
+    "http-server": "^0.9.0",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1"
+  }
+}
