@@ -1,0 +1,145 @@
+﻿<!doctype html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+
+	<title>PiP - Better JS with TS</title>
+
+	<meta name="description" content="Better and Easier Javascript with Typescipt - PiP Session 24/06/2016">
+	<meta name="author" content="Daniele Morosinotto">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/pip.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/eclipse.css">
+
+	<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+	<script>
+		if( window.location.search.match( /print-pdf/gi ) ) {
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = 'css/print/pdf.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		}
+	</script>
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+		
+</head>
+<body>
+<div class="reveal">
+	<!-- Any section element inside of this container is displayed as a slide -->
+	<div class="slides">
+	<section>
+		<section data-state="intro">
+			<br/>
+			<h2>Better JS with TS</h2>
+			<p>by Daniele Morosinotto</p>
+			
+			<small>Slide & Code: <a href="https://github.com/dmorosinotto/PiP_BetterJS_with_TS">https://github.com/dmorosinotto/PiP_BetterJS_with_TS</a></small>
+		</section>
+		<section>
+			<img src="images/Who.gif" />
+			<h3>DISCLAIMER</h3>
+			<quote>I'm not a JS guru, geek or nerd...
+			<br/>Simply I started learning it seriously
+			<br/>in last 4 years and I'm very enthusiast by it, 
+			<br/>I follow and use TS and NG projects by "day-0"!</quote>
+		</section>
+	</section>		
+	
+<section data-markdown data-separator="^\n===\n$" data-vertical="^\n---\n">
+<script type="text/template">
+#Agenda
+
+Write something...
+
+---
+
+## Slide Title 
+- List items
+- Text [Link](http://www.google.it)
+	- normal
+	- **bold**
+	- *italic*
+![Image alt](images/Who.gif)
+
+===
+
+# Simple Snippet
+
+```javascript
+var a=1, b=2;
+console.log( a+b === 0.3 ); //FALSE
+```
+
+===
+
+## Reference
+- [link](http://site.url) description
+
+</script>
+</section>
+<section>	
+	<section data-state="demo">
+	</section>
+</section>	
+<section>	
+	<section data-state="feedback">
+	  <h1>THE END</h1>
+	  <h3>by Daniele Morosinotto</h3>
+	  <br/>
+	  <h5>Contact</h5>
+	  <ul>
+		<li><a href="mailto:dmorosinotto@icloud.com">dmorosinotto@icloud.com</a></li>
+		<li>twiter <a href="https://twitter.com/dmorosinotto">@dmorosinotto</a></li>
+		<li>download <a href="http://link/to/onedrive">http://1drv.ms/short.link</a></li>
+	  <ul>	
+	  <br/>
+	  <small>Realizzato con <a href="http://lab.hakim.se/reveal-js">reveal.js</a> + <a href="http://ace.c9.io/">ace code editor</a>.</small>	  
+	</section>		  
+</section>
+
+	</div><!-- end slides -->
+</div><!-- end reveal -->
+
+
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: "pip", // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+		
+		// Don't forget to add the dependencies
+		dependencies: [
+			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+		]
+	});
+	
+	function showCode(n) {
+		
+	}
+</script>
+
+</body>
+</html>

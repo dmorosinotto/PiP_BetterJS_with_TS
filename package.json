@@ -1,0 +1,21 @@
+{
+  "name": "pip-better-js-with-ts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PiP - Better JS with TS",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run tsc -- samples/basics  &&  npm run serve -- samples/basics",
+    "tsc": "tsc -pretty -p ",
+    "serve": "http-server -p 8080 -c-1 "
+  },
+  "keywords": [
+    "Typescipt"
+  ],
+  "author": "Daniele Morosinotto (d.morosinotto@icloud.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "typescript": "^1.8.10"
+  }
+}
