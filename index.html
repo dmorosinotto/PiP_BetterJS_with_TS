@@ -96,7 +96,7 @@ function output(sep = '\n', ...args: any[]):void
 DEMO: **Type-Check** based on [annotations](samples/basics/annotations.ts) in Sublime
 
 ---
-### DEMO: Typescript prevent/help find [bugs](samples/basics/bug.ts) in code!
+### DEMO: Typescript prevent/help find [bugs](samples/basics/bug.js) in your code at Design-Time!
 
 ![DEMO](images/DEMO.png)
 
@@ -115,7 +115,7 @@ DEMO: **Type-Check** based on [annotations](samples/basics/annotations.ts) in Su
 #TS/ES6 Modules
 
 ```javascript
-//FILE index.ts
+// FILE index.ts
 import { Log } from "./log";
 new Log().print("World!");
 ```
@@ -132,7 +132,7 @@ export class Log {
 ```
 
 ```javascript
-//FILE utils.ts
+// FILE util.ts
 import init from "./util_init";
 export function add(...args) {
     return args.reduce( (s,i) => s+i , init);
@@ -140,7 +140,7 @@ export function add(...args) {
 ```
 
 ```javascript
-// FILE utils_init.ts
+// FILE util_init.ts
 const now = Date();
 export default now;
 ```

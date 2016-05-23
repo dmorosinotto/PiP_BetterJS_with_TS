@@ -2,7 +2,7 @@
   "name": "ts-next-future",
   "version": "1.0.0",
   "description": "Show typescript@next future: strictNullChecks + controlFlow",
-  "main": "tsconfig.json",
+  "main": "index.js",
   "private": true,
   "scripts": {
     "start": "echo 'TO RUN/TEST npm i --save typscript@next \n AND POINT VSCODE TO USE CUSTOM TSDK' && code ."
