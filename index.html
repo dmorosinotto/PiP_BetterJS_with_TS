@@ -87,6 +87,10 @@ interface Person {
 var people: Array<Person>
 // UNION TYPES
 var opt: number | string | string[];
+// FUNCTIONS
+function output(...args: any[]):void
+function output(sep?: string, ...args: any[]):void
+function output(sep = '\n', ...args: any[]):void
 ```
 
 DEMO: **Type-Check** based on [annotations](samples/basics/annotations.ts) in Sublime
@@ -108,6 +112,40 @@ DEMO: **Type-Check** based on [annotations](samples/basics/annotations.ts) in Su
 ![TS_fill_feature_gap](images/TS_fill_feature_gap.png)
 
 ---
+#TS/ES6 Modules
+
+```javascript
+//FILE index.ts
+import { Log } from "./log";
+new Log().print("World!");
+```
+
+```javascript
+// FILE log.ts
+import { add as prepareMsg } from "./util";
+export class Log {
+    constructor(private prefix: string = "Hello") {}
+    print(s) {
+        console.log( prepareMsg(this.prefix, ' ', s) );
+    }
+}
+```
+
+```javascript
+//FILE utils.ts
+import init from "./util_init";
+export function add(...args) {
+    return args.reduce( (s,i) => s+i , init);
+}
+```
+
+```javascript
+// FILE utils_init.ts
+const now = Date();
+export default now;
+```
+
+---
 ### DEMO: Typescript [module](samples/modules) architecture
 
 ![DEMO](images/DEMO.png)
@@ -124,6 +162,7 @@ DEMO: **Type-Check** based on [annotations](samples/basics/annotations.ts) in Su
 - TypeScript is Open Source: [Github Repository](https://github.com/Microsoft/TypeScript) + [Feature/Release notes](http://www.typescriptlang.org/docs/release-notes/typescript-1.8.html)
 - TS Definitions files .d.ts for 2K lib: [Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped) [TSD](http://definitelytyped.org/tsd/) [typings](https://www.npmjs.com/package/typings)
 - All JS libraries should be authored in TypesSript by [André Staltz](http://staltz.com/all-js-libraries-should-be-authored-in-typescript.html)
+- How to setup Typescript for different Framework / [TS config](https://blogs.msdn.microsoft.com/typescript/2016/05/10/making-new-typescript-projects-a-breeze/)
 - Talk Anders Hejlsberg explain modern [Compiler](https://channel9.msdn.com/Blogs/Seth-Juarez/Anders-Hejlsberg-on-Modern-Compiler-Construction) and future [TypeScript 2.0](https://channel9.msdn.com/Blogs/Seth-Juarez/Anders-Hejlsberg-on-TypeScript-2)
 
 ![Contacts](images/Contact.jpg)<!-- .element: class="noborder" -->

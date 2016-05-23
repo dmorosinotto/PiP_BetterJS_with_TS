@@ -1,4 +1,4 @@
-import { add } from "./util";
+import { add as prepareMsg} from "./util";
 
 export class Log {
     private el: HTMLElement;
@@ -15,7 +15,7 @@ export class Log {
         } else {
             s = x;
         }
-        var t = document.createTextNode( add(this.prefix, ' ', s) )
+        var t = document.createTextNode( prepareMsg(this.prefix, ' ', s) )
         var p = document.createElement("p")
         p.appendChild( t );
         this.el.appendChild( p );

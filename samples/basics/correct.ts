@@ -1,9 +1,6 @@
-/// <reference path="output.d.ts" />
-
-
-var movie = { title: "Matrix", year: 1999, IMDb: 8.7 };
+var movie = { title: "The Matrix", year: 1999, IMDb: 8.7, genre: ["science fiction"] };
 var ratings = movie.IMDb;
-output(movie.title + ' ' + ratings);
+alert(movie.title + ' ' + ratings);
 
 
 
@@ -15,7 +12,7 @@ Point.prototype.dist = function () {
     return Math.sqrt(this.x * this.x + this.y * this.y);
 }
 var p = new Point(10, 20);
-output(p, p.dist());
+output(p, p.dist(), "------ POINT ------");
 
 
 
@@ -24,7 +21,7 @@ function isPast(date) {
     return date.getTime() < now;
 }
 var Natale = new Date(2015, 11, 25);
-output(Natale, isPast(Natale));
+output(Natale, isPast(Natale), "------ ISPAST -----");
 
 
 
@@ -32,35 +29,24 @@ function ask(question) {
     var answer = prompt(question);
     var answerView = document.getElementById("answer");
     answerView.innerText = answer;
+    answerView.hidden = (answer == "");
 }
 
 
 
-function handleLoad() { console.log("Page loaded!"); }
-document.onload = handleLoad;
-
-
-
-function newCoinToss() {
-    return Math.random() > 0.5 ? "TESTA" : "CROCE";
+function handleLoad() { 
+    console.log("Page loaded!"); 
+    document.addEventListener("mousedown", function (event) {
+        console.log(event.clientX, event.clientY);
+    });
 }
-var tiri = [1, 2, 3, 4, 5].map(newCoinToss);
-var allHeads = tiri.every(function (tiro) {
-    return tiro == "TESTA";
-});
-if (allHeads) alert(tiri.length + " volte TESTA di fila!?!");
+window.onload = handleLoad;
 
 
-
-document.addEventListener("mousedown", function (event) {
-    console.log(event.clientX, event.clientY);
-});
-
-
-interface Named {
+interface IName {
     name: string;
 }
-function sortByName<T extends Named>(a: T[]) {
+function sortByName<T extends IName>(a: T[]) {
     var result = a.slice(0);
     result.sort(function(x,y){
         return x.name.localeCompare(y.name);
@@ -68,15 +54,21 @@ function sortByName<T extends Named>(a: T[]) {
     return result;
 }
 
-var data = [{ name: "Pippo", age: 123, geek: true }, { name: "Pluto", age: 45, geek: false }, { name: "Paperino", age: 67, geek: null }]
-var res = sortByName(data);
-document.getElementById('content').innerText = JSON.stringify(res);
+//var test = sortByName(5);
+//var test = sortByName([]);
+//var test = sortByName([{ name: "Pippo" }, { name: "Pluto" }, { name: "Paperino" }]);
+var test = sortByName(people);
+console.log(test[0].age);
+document.getElementById("sorted").innerText = JSON.stringify(test);
 
 
-//declare var $:any
-
+declare var $:any // BETTER USE typings install jquery --ambient
 $().ready(function () {
-    var arr = [{ name: "Pippo" }, { name: "Pluto" }, { name: "Paperino" }]
-    var test = sortByName(arr);
-    $("#content").text(JSON.stringify(test));
+    const SOS = [{ name: "iOS", share: 14.4, free: false }, 
+               { name: "WinPhone", share: 7.2, free: true }, 
+               { name: "Android", share: 78.1, free: true },
+               { name: "BlackBerry", share: 0.2 , free: null }];
+    let res = sortByName(SOS);
+    $("#sorted").text(JSON.stringify(test)).css("color","red");
+    output(res[0], `--- RES[0].free = ${res[0].free} ---`);
 });

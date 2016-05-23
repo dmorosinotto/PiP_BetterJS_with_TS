@@ -5,20 +5,14 @@
 </head>
 <body>
     <h1>TypeScript helps find / prevent bugs</h1>
-
-    <div id="content"></div>
+    
     <pre id="output"></pre>
-    <script>
-        function output() {
-            var args = Array.prototype.slice.call(arguments, 0);
-            args.map(function (arg) {
-                document.getElementById("output").innerText += JSON.stringify(arg) + "\n";
-            });
-        }
-    </script>
-    <button onclick="ask('come stai?')">Domanda</button>
+    <script src="dist/annotations.js"></script>
+    
+    <button onclick="ask('How are you?')">ASK</button>
     <span id="answer"></span>
-    <!-- <script src="bug.js"></script> -->
-    <script src="dist/correct.js"></script>
+    <pre id="sorted">SORTED:</pre>
+    <script src="bug.js"></script>
+    <!-- <script src="dist/correct.js"></script> -->
 </body>
 </html>

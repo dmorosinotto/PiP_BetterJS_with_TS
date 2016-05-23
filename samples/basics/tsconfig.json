@@ -3,5 +3,11 @@
         "target": "es5",
         "noImplicitAny": false,
         "outDir": "dist"
-    }
+    },
+    "exclude": [
+        "node_modules",
+        "typings",
+        "correct.ts"
+    ],
+    "compileOnSave": true
 }

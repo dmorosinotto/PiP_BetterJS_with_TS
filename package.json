@@ -5,8 +5,8 @@
   "description": "PiP - Better JS with TS",
   "main": "index.html",
   "scripts": {
-    "start": "npm run serve  &&  npm run build",
-    "build": "tsc -pretty -p samples/basics -w",
+    "start": "npm run serve & npm run build -- -w",
+    "build": "tsc -pretty -p samples/basics",
     "serve": "http-server -p 8080 -c-1 samples/basics"
   },
   "keywords": [

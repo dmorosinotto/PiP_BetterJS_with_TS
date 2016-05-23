@@ -2,7 +2,7 @@ PiP - Better JS with TS
 ====
 
 ## Better & Easier Javascript with Typescript
-__Talk 24-06-2016 [Programmers in Padua](http://programmersinpadua.github.io/index.html) by Daniele Morosinotto__
+__Talk 24-05-2016 [Programmers in Padua](http://programmersinpadua.github.io/index.html) by Daniele Morosinotto__
 
 - Presentation (created using [reveal.js](http://lab.hakim.se/reveal-js)) give a quick [intro](index.html) to **Typescript**, more infos can be found on [official site](http://www.typescriptlang.org/docs/tutorial.html) 
 - [Samples](samples) code use **Typescript** to show how [annotations](samples/basics/annotations.ts) can help discovering [bugs in js](samples/basics/bug.js) and [correct](samples/basics/correct.ts) them using TS, and show 

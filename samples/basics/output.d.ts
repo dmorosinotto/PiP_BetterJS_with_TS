@@ -1,1 +1,0 @@
-declare function output(...args: any[]):void;
