@@ -1,5 +1,5 @@
 {
-  "name": "future",
+  "name": "ts-next-future",
   "version": "1.0.0",
   "description": "Show typescript@next future: strictNullChecks + controlFlow",
   "main": "tsconfig.json",
@@ -8,7 +8,7 @@
     "start": "echo 'TO RUN/TEST npm i --save typscript@next \n AND POINT VSCODE TO USE CUSTOM TSDK' && code ."
   },
   "keywords": ["Typescript","strictNullChecks","controlFlow"],
-  "author": "Daniele Morosinotto",
+  "author": "Daniele Morosinotto (dmorosinotto@icloud.com)",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^1.9.0-dev.20160523-1.0"

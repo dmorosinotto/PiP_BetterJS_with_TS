@@ -1,7 +1,7 @@
 {
   "name": "ts-namespace",
   "version": "1.0.0",
-  "description": "",
+  "description": "Show how to configure Typescript to compile all code in a bundle using globals/Namespace",
   "private": true,
   "main": "dist/bundle.js",
   "scripts": {

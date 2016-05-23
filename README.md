@@ -6,8 +6,8 @@ __Talk 24-05-2016 [Programmers in Padua](http://programmersinpadua.github.io/ind
 
 - Presentation (created using [reveal.js](http://lab.hakim.se/reveal-js)) give a quick [intro](index.html) to **Typescript**, more infos can be found on [official site](http://www.typescriptlang.org/docs/tutorial.html) 
 - [Samples](samples) code use **Typescript** to show how [annotations](samples/basics/annotations.ts) can help discovering [bugs in js](samples/basics/bug.js) and [correct](samples/basics/correct.ts) them using TS, and show 
-different way to compile and bundle the same app modules written in TS using: [namespace](samples/modules/namespace) , [amd + requirejs](samples/modules/amd) , [cjs + browserify](samples/modules/cjs) , [webpack](samples/modules/webpack) and [systemjs](samples/modules/systemjs).
-- In [future](samples/future) you can see a sample of future Typescript 2.0 features: **controlFlow** and **strictNullCheck**, to run it you need to install locally `typescript@next` and point VSCode to use it!
+different way to compile and bundle the same app modules written in TS using: [namespace](samples/modules/namespace) , [amd + requirejs](samples/modules/amd) , [commonjs + browserify](samples/modules/cjs) , [webpack](samples/modules/webpack) and [systemjs](samples/modules/systemjs).
+- An then you can preview a sample of [future](samples/future) Typescript 2.0 features: **controlFlow** and **strictNullCheck** - NOTE: to run it you need to install locally `typescript@next` and point [VSCode](samples/future/.vscode/settings.json) to use it!
 
 ---
 

@@ -1,7 +1,7 @@
 {
   "name": "ts-amd",
   "version": "1.0.0",
-  "description": "",
+  "description": "Show how to configure Typescript to compile AMD module and loads it with RequireJS",
   "private": true,
   "main": "dist/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "AMD",
     "requirejs"
   ],
-  "author": "Daniele Morosinotto",
+  "author": "Daniele Morosinotto (dmorosinotto@icloud.com)",
   "license": "MIT",
   "peerDependencies": {
     "http-server": "^0.9.0",
