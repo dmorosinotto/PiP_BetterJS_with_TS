@@ -2,12 +2,10 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es5",
-        "noImplicitAny": false,
+        "noImplicitAny": true,
         "sourceMap": false,
         "strictNullChecks": true,
         "experimentalDecorators": true
-    },
-    "exclude": [
-        "TypeScript-controlFlowTypes"
-    ]
+        
+    }
 }
