@@ -4,8 +4,10 @@
         "target": "es5",
         "noImplicitAny": true,
         "sourceMap": false,
-        "strictNullChecks": true,
-        "experimentalDecorators": true
-        
+        "strictNullChecks": true, //ONLY IF YOU ARE REALLY STRICT PERSON 2.1+ (false to fix index.ts warnings)
+        "experimentalDecorators": true,
+        "lib": [
+            "dom", "es2015", "es2015.promise"
+        ]
     }
 }
